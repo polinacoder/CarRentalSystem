@@ -1,0 +1,4 @@
+databaseChangeLog:
+  - include:
+      file: changelog/01_init_users_table.sql
+      relativeToChangelogFile: true
