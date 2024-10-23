@@ -1,7 +1,7 @@
-package com.code.system.service;
+package com.code.system.user.service;
 
-import com.code.system.dao.UserDao;
-import com.code.system.model.User;
+import com.code.system.user.dao.UserDao;
+import com.code.system.user.model.User;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

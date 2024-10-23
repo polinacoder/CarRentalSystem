@@ -1,6 +1,6 @@
-package com.code.system.dao;
+package com.code.system.user.dao;
 
-import com.code.system.model.User;
+import com.code.system.user.model.User;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 

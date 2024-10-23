@@ -1,7 +1,7 @@
-package com.code.system.controller;
+package com.code.system.user.controller;
 
-import com.code.system.model.User;
-import com.code.system.service.UserService;
+import com.code.system.user.model.User;
+import com.code.system.user.service.UserService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

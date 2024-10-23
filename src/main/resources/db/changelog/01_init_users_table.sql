@@ -1,6 +1,6 @@
 --liquibase formatted sql
 
---changeset polina.petrushina:create-user-table runOnChange:false runAlways:false dbms:postgresql
+--changeset polina.petrushina:create-users-table runOnChange:false runAlways:false dbms:postgresql
 CREATE TABLE users
 (
     id           int         NOT NULL,
@@ -12,7 +12,7 @@ CREATE TABLE users
 );
 
 COMMENT ON TABLE users IS 'Таблица пользователей';
-COMMENT ON COLUMN users.id IS 'Уникальный идентификатор пользователя';
+COMMENT ON COLUMN users.id IS 'Идентификатор пользователя';
 COMMENT ON COLUMN users.first_name IS 'Имя пользователя';
 COMMENT ON COLUMN users.last_name IS 'Фамилия подьзователя';
 COMMENT ON COLUMN users.phone_number IS 'Номер телефона пользователя';
