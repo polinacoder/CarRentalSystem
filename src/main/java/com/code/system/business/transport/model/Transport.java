@@ -2,8 +2,6 @@ package com.code.system.business.transport.model;
 
 import lombok.Builder;
 
-import java.math.BigDecimal;
-
 @Builder
 public record Transport(Integer id,
                         String type,
@@ -11,6 +9,6 @@ public record Transport(Integer id,
                         String model,
                         String number,
                         boolean isAvailable,
-                        BigDecimal transportPrice
+                        TransportPrice transportPrice
                         ) {
 }

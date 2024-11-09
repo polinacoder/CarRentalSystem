@@ -19,9 +19,9 @@ public class ExtraServiceRepository implements ExtraServiceDao {
     @Override
     public List<ExtraService> selectExtraServices() {
         var sql = """
-                SELECT s.id, s.extra_service_name, p.price
+                SELECT s.extra_service_id, s.extra_service_name, p.price
                 FROM extra_service s LEFT JOIN extra_service_price p
-                ON s.id = p.extra_service_id AND p.is_actual = true
+                ON s.extra_service_id = p.extra_service_id AND p.is_actual = true
                 LIMIT 100;
                  """;
         return jdbcTemplate.query(sql, new ExtraServiceMapper());

@@ -1,6 +1,7 @@
 package com.code.system.business.transport.dao;
 
 import com.code.system.business.transport.model.Transport;
+import com.code.system.business.transport.model.TransportPrice;
 import org.springframework.jdbc.core.RowMapper;
 
 import java.sql.ResultSet;
@@ -16,7 +17,7 @@ public class TransportMapper implements RowMapper<Transport> {
                 .model(rs.getString("model"))
                 .number(rs.getString("number"))
                 .isAvailable(rs.getBoolean("is_available"))
-                .transportPrice(rs.getBigDecimal("price"))
+                .transportPrice(new TransportPrice(rs.getInt("transport_price_id"), rs.getBigDecimal("price"), true))
                 .build();
     }
 }

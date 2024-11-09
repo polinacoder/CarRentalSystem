@@ -8,3 +8,6 @@ databaseChangeLog:
   - include:
       file: changelog/03_init_extra_service_tables.sql
       relativeToChangelogFile: true
+  - include:
+      file: changelog/04_init_booking_tables.sql
+      relativeToChangelogFile: true
