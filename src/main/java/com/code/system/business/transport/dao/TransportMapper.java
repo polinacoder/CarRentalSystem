@@ -11,6 +11,7 @@ public class TransportMapper implements RowMapper<Transport> {
     @Override
     public Transport mapRow(ResultSet rs, int rowNum) throws SQLException {
             System.out.println(rs.getBigDecimal("price"));
+        System.out.println(rs.getBoolean("is_available"));
         return Transport.builder().id(rs.getInt("id"))
                 .type(rs.getString("type"))
                 .subtype(rs.getString("subtype"))

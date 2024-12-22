@@ -32,7 +32,7 @@ public class ExtraServiceRepository implements ExtraServiceDao {
         var sql = """
                 SELECT extra_service_name
                 FROM extra_service
-                WHERE id = ?
+                WHERE extra_service_id = ?
                  """;
         return jdbcTemplate.query(sql, new ExtraServiceMapper(), id)
                 .stream()
@@ -45,7 +45,7 @@ public class ExtraServiceRepository implements ExtraServiceDao {
             var sql = """
                     UPDATE extra_service
                     SET extra_service_name = ?
-                    WHERE id = ?;
+                    WHERE extra_service_id = ?;
                      """;
             return jdbcTemplate.update(
                     sql,
@@ -66,7 +66,7 @@ public class ExtraServiceRepository implements ExtraServiceDao {
     public int deleteExtraService(int id) {
         var sql = """
                 DELETE FROM extra_service
-                WHERE id = ?;
+                WHERE extra_service_id = ?;
                  """;
         return jdbcTemplate.update(
                 sql, id

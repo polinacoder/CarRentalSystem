@@ -19,7 +19,7 @@ public class TransportRepository implements TransportDao {
     @Override
     public List<Transport> selectTransports() {
         var sql = """
-                SELECT t.id, t.type, t.subtype, t.model, t.number, t.is_available, p.transport_price_id
+                SELECT t.id, t.type, t.subtype, t.model, t.number, t.is_available, p.transport_price_id, p.price
                 FROM transport t LEFT JOIN transport_price p
                 ON t.id = p.transport_id AND p.is_actual = true
                 LIMIT 100;
@@ -30,11 +30,11 @@ public class TransportRepository implements TransportDao {
     @Override
     public Optional<Transport> selectTransportById(int id) {
         var sql = """
-                SELECT t.type, t.subtype, t.model, t.number, t.is_available, p.transport_price_id
-                FROM transport t LEFT JOIN transport_price p
-                ON t.id = p.transport_id AND p.is_actual = true
-                LIMIT 100;
-                 """;
+            SELECT t.id, t.type, t.subtype, t.model, t.number, t.is_available, p.transport_price_id, p.price
+            FROM transport t LEFT JOIN transport_price p
+            ON t.id = p.transport_id AND p.is_actual = true
+            WHERE t.id = ?
+            """;
         return jdbcTemplate.query(sql, new TransportMapper(), id)
                 .stream()
                 .findFirst();

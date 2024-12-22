@@ -1,6 +1,9 @@
 package com.code.system.business.transport.dto;
 
+import jakarta.annotation.Nullable;
 import lombok.*;
+
+import java.sql.Timestamp;
 
 @Builder
 @Setter
@@ -9,9 +12,13 @@ import lombok.*;
 @AllArgsConstructor
 public class SearchRequestDto {
     @NonNull
+    Timestamp startRentDate;
+    @NonNull
+    Timestamp endRentDate;
+    @NonNull
     String type;
-    @NonNull
+    @Nullable
     String subtype;
-    @NonNull
+    @Nullable
     String model;
 }

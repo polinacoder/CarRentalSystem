@@ -16,8 +16,7 @@ public class TransportController {
     }
 
     @GetMapping
-    public List<Transport> listTransports() {
-        return transportService.getTransports();
+    public List<Transport> listTransports() {return transportService.getTransports();
     }
 
     @GetMapping("{id}")
@@ -28,6 +27,7 @@ public class TransportController {
     @PostMapping
     public void addTransport(@RequestBody Transport transport) {
         transportService.addTransport(transport);
+        //при создании транспорта is available указывается false, хотя отправляется true
     }
 
     @DeleteMapping("{id}")

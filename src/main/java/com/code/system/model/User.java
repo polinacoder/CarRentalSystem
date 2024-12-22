@@ -1,4 +1,4 @@
-package com.code.system.user.model;
+package com.code.system.model;
 
 import lombok.Builder;
 
