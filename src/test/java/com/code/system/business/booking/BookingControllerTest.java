@@ -1,8 +1,8 @@
-package com.code.system.business.booking.controller;
+package com.code.system.business.booking;
 
-import com.code.system.business.booking.controller.dao.BookingRepository;
-import com.code.system.business.booking.controller.dto.BookingResponse;
-import com.code.system.business.booking.controller.model.Booking;
+import com.code.system.business.booking.dao.BookingRepository;
+import com.code.system.business.booking.dto.BookingResponse;
+import com.code.system.business.booking.model.Booking;
 import com.code.system.business.transport.dao.TransportRepository;
 import com.code.system.business.transport.model.Transport;
 import com.code.system.business.transport.model.TransportPrice;

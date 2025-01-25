@@ -1,9 +1,9 @@
-package com.code.system.business.booking.controller.controller;
+package com.code.system.business.booking.controller;
 
-import com.code.system.business.booking.controller.dto.BookingResponse;
-import com.code.system.business.booking.controller.model.Booking;
-import com.code.system.business.booking.controller.dto.BookingCreationRequest;
-import com.code.system.business.booking.controller.service.BookingService;
+import com.code.system.business.booking.dto.BookingResponse;
+import com.code.system.business.booking.model.Booking;
+import com.code.system.business.booking.dto.BookingCreationRequest;
+import com.code.system.business.booking.service.BookingService;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.web.bind.annotation.*;
 

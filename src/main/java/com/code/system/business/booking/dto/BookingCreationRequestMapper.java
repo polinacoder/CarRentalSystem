@@ -1,6 +1,6 @@
-package com.code.system.business.booking.controller.dto;
+package com.code.system.business.booking.dto;
 
-import com.code.system.business.booking.controller.model.Booking;
+import com.code.system.business.booking.model.Booking;
 
 import java.sql.Timestamp;
 

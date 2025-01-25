@@ -1,9 +1,9 @@
-package com.code.system.business.booking.controller.dao;
+package com.code.system.business.booking.dao;
 
-import com.code.system.business.booking.controller.dto.BookingResponse;
-import com.code.system.business.booking.controller.dto.BookingResponseMapper;
-import com.code.system.business.booking.controller.model.Booking;
-import com.code.system.business.booking.controller.model.BookingStatus;
+import com.code.system.business.booking.dto.BookingResponse;
+import com.code.system.business.booking.dto.BookingResponseMapper;
+import com.code.system.business.booking.model.Booking;
+import com.code.system.business.booking.model.BookingStatus;
 import jakarta.annotation.Nullable;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.jdbc.core.JdbcTemplate;

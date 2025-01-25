@@ -1,4 +1,4 @@
-package com.code.system.business.booking.controller.model;
+package com.code.system.business.booking.model;
 
 import jakarta.annotation.Nullable;
 import lombok.*;

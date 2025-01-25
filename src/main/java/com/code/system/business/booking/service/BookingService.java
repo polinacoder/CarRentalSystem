@@ -1,10 +1,10 @@
-package com.code.system.business.booking.controller.service;
+package com.code.system.business.booking.service;
 
-import com.code.system.business.booking.controller.dto.BookingCreationRequestMapper;
-import com.code.system.business.booking.controller.dao.BookingDao;
-import com.code.system.business.booking.controller.dto.BookingResponse;
-import com.code.system.business.booking.controller.model.Booking;
-import com.code.system.business.booking.controller.dto.BookingCreationRequest;
+import com.code.system.business.booking.dto.BookingCreationRequestMapper;
+import com.code.system.business.booking.dao.BookingDao;
+import com.code.system.business.booking.dto.BookingResponse;
+import com.code.system.business.booking.model.Booking;
+import com.code.system.business.booking.dto.BookingCreationRequest;
 import com.code.system.business.exception.BusinessException;
 import com.code.system.business.exception.NotFoundException;
 import com.code.system.business.transport.dao.TransportDao;
